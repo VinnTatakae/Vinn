@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Container Utama */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/MOUNTAINS.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Kartu Profil */
+.card {
+    width: 90%;
+    max-width: 450px;
+    color: #000; /* Warna teks hitam */
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.card img {
+    width: 140px;
+    border-radius: 50%;
+}
+
+.card h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #000; /* Warna hitam */
+}
+
+.card p {
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 330px;
+    color: #000; /* Warna hitam */
+}
+
+/* Link Sosial Media */
+.card .link img {
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card .link img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(252, 1, 1, 0.8);
+}
+
+/* Tombol */
+.btn {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 30em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover, .btn:focus {
+    color: #fff;
+    background: #e74c3c;
+    border-color: #e74c3c;
+    outline: 0;
+}
+
+/* Tombol Telegram */
+.fourth {
+    border-color: #04b9fb;
+    color: #ffffff;
+    background-image: linear-gradient(45deg, #f10ff1 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.fourth:hover {
+    background-position: 0;
+}
